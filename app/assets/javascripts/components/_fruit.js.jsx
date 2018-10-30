@@ -26,8 +26,8 @@ constructor(props){
         let description = this.state.editable ? <input type='text' ref={input => this.description = input} defaultValue={this.props.fruit.description}/>:<p>{this.props.fruit.description}</p>
       return(
         <div>
-          {name}  {description}<button onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
-          <button onClick={() => this.props.handleDelete(this.props.fruit.id)}>Delete</button>
+          {name}  {description}<button class="btn btn-primary" onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
+          <button class="btn btn-danger" onClick={() => this.props.handleDelete(this.props.fruit.id)}>Delete</button>
         </div>
       )      
     }

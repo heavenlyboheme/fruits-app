@@ -74,7 +74,7 @@ componentDidMount(){
   }
 render(){
     return(
-      <div>
+      <div class="lead">
           <NewFruit handleFormSubmit={this.handleFormSubmit}/>
         <AllFruits fruits={this.state.fruits} handleDelete={this.handleDelete} handleUpdate = {this.handleUpdate}/>
       </div>
